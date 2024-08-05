@@ -7,7 +7,7 @@
 [x] Collision detection
 [x] Sprite animation
 [x] HitBox implementation
-[] Sprite swapping
+[x] Sprite swapping
 [] Entering doors
 [] Change levels
 [] Next steps
