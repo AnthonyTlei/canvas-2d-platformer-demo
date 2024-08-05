@@ -42,7 +42,9 @@ function animate() {
 }
 
 // Object Creation
-const player = new Player();
+const player = new Player({
+  collisionBlocks,
+});
 const backgroundLevel1 = new Sprite({
   position: {
     x: 0,
