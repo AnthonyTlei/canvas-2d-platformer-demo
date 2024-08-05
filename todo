@@ -6,7 +6,7 @@
 [x] Collision blocks
 [x] Collision detection
 [x] Sprite animation
-[] HitBox implementation
+[x] HitBox implementation
 [] Sprite swapping
 [] Entering doors
 [] Change levels
