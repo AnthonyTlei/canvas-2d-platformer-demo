@@ -5,6 +5,9 @@ const c = canvas.getContext("2d");
 canvas.width = 64 * 16; // 1024;
 canvas.height = 64 * 9; // 576;
 
+const parsedCollisions = collisionsLevel1.parse2D();
+const collisionBlocks = parsedCollisions.createObjectsFrom2D();
+
 const keys = {
   w: {
     pressed: false,
@@ -23,6 +26,9 @@ function animate() {
   window.requestAnimationFrame(animate);
 
   backgroundLevel1.draw();
+  collisionBlocks.forEach((block) => {
+    block.draw();
+  });
 
   player.velocity.x = 0;
   if (keys.d.pressed && keys.lastKey === "d") {
