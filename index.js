@@ -44,6 +44,8 @@ function animate() {
 // Object Creation
 const player = new Player({
   collisionBlocks,
+  imageSrc: "img/king/idle.png",
+  frameRate: 11,
 });
 const backgroundLevel1 = new Sprite({
   position: {
